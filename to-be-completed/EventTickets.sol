@@ -34,7 +34,6 @@ contract EventTickets {
     /*
         Define 3 logging events.
 
-        
         LogBuyTickets should provide information about the purchaser and the number of tickets purchased.
         LogGetRefund should provide information about the refund requester and the number of tickets refunded.
         LogEndSale should provide infromation about the contract owner and the balance transferred to them.

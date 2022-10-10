@@ -1,4 +1,5 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
 
 contract ProofOfExistence1 {
     // state
@@ -13,6 +14,6 @@ contract ProofOfExistence1 {
     // helper function to get a document's sha256
     // *read-only function*
     function proofFor(string memory document) public pure returns (bytes32) {
-        return sh256(abi.encodePacked(document));
+        return sha256(abi.encodePacked(document));
     }
 }
